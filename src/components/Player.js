@@ -16,9 +16,6 @@ export default function Player({
       <CardList
         player={player}
         cards={hand}
-      // setFrom={setFrom}
-      // selectedCard={selectedCard}
-      // setSelectedCard={setSelectedCard}
       />
     </div>
   );
