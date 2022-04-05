@@ -4,7 +4,7 @@ import Card from './Card';
 
 export default function ExecutePassButton() {
   // passCard function
-  const { playerOneHand, setPlayerOneHand, playerTwoHand, setPlayerTwoHand, playerThreeHand, setPlayerThreeHand, deck, setDeck, selectedCard, setSelectedCard, from, to } = useGame();
+  const { playerOneHand, setPlayerOneHand, playerTwoHand, setPlayerTwoHand, playerThreeHand, setPlayerThreeHand, deck, setDeck, selectedCard, setSelectedCard, from, setFrom, to } = useGame();
   function findCardIndex(value, suit, cards) {
     return cards.findIndex((card) => card.value === value && card.suit === suit);
   }

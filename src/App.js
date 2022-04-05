@@ -1,8 +1,8 @@
 import './App.css';
-import initialCards from './cards-data';
+// import initialCards from './cards-data';
 import Player from './components/Player';
 import CardList from './components/CardList';
-import { useState } from 'react';
+// import { useState } from 'react';
 import ExecutePassButton from './components/ExecutePassButton';
 import { useGame } from './context/GameContext';
 
@@ -14,7 +14,7 @@ function App() {
   // const [playerThreeHand, setPlayerThreeHand] = useState([]);
   // const [from, setFrom] = useState('deck');
   // const [to, setTo] = useState(1);
-  const { playerOneHand, playerTwoHand, playerThreeHand, selectedCard } = useGame();
+  const { playerOneHand, playerTwoHand, playerThreeHand, selectedCard, deck } = useGame();
 
   // function findCardIndex(value, suit, cards) {
   //   return cards.findIndex((card) => card.value === value && card.suit === suit);
@@ -75,21 +75,21 @@ function App() {
         />
         <CardList
           cards={deck}
-          selectedCard={selectedCard}
-          setSelectedCard={setSelectedCard}
-          setFrom={setFrom}
+          // selectedCard={selectedCard}
+          // setSelectedCard={setSelectedCard}
+          // setFrom={setFrom}
           player={'deck'}
         />
       </section>
       <section>
         {selectedCard && (
           <ExecutePassButton
-            passCard={passCard}
-            setFrom={setFrom}
-            from={from}
-            to={to}
-            selectedCard={selectedCard}
-            setSelectedCard={setSelectedCard}
+          // passCard={passCard}
+          // setFrom={setFrom}
+          // from={from}
+          // to={to}
+          // selectedCard={selectedCard}
+          // setSelectedCard={setSelectedCard}
           />
         )}
       </section>
